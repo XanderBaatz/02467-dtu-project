@@ -1,0 +1,12 @@
+pandas
+matplotlib
+seaborn
+spacy
+dacy
+netwulf
+networkx
+powerlaw
+scikit-learn
+scipy
+wordcloud
+deep-translator
