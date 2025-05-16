@@ -1,0 +1,763 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Network Analysis &#8212; How the Media Talks About People</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'network';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Language Analysis" href="analysis.html" />
+    <link rel="prev" title="Data Processing" href="data-processing.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo3.png" class="logo__image only-light" alt="How the Media Talks About People - Home"/>
+    <script>document.write(`<img src="_static/logo3.png" class="logo__image only-dark" alt="How the Media Talks About People - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Introduction
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="dataset.html">Dataset</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="data-processing.html">Data Processing</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Network Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="analysis.html">Language Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="explainer.html">Explainer-notebook.ipynb</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fnetwork.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/network.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Network Analysis</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#network-summary-statistics">Network Summary Statistics</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analysis-of-entertainment-network">Analysis of Entertainment Network</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#power-law-and-top-hubs">Power-law and Top Hubs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#assortativity-random-network">Assortativity: Random Network</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#network-communities">Network Communities</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#top-communities">Top Communities</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="network-analysis">
+<h1>Network Analysis<a class="headerlink" href="#network-analysis" title="Link to this heading">#</a></h1>
+<p>We visualize and analyze the co-mention network of people in Danish Ekstra Bladet media, tied to the entertainment category. To re-iterate: if two people are mentioned in the same article, they are connected.</p>
+<p>Using <code class="docutils literal notranslate"><span class="pre">networkx</span></code>, the graph is obtained from the resulting DataFrame in the previous section, where:</p>
+<ul class="simple">
+<li><p>Each node is a person</p></li>
+<li><p>Each edge means they’ve appeared in the same article</p></li>
+<li><p>A node’s degree is the number of connections</p></li>
+<li><p>An edge’s weight is the number of distinct aritcles shared</p></li>
+</ul>
+<p>To get rid of weak links, we only keep edges with weight <span class="math notranslate nohighlight">\(&gt;2\)</span>. This means that two people briefly co-mentioned in one or two articles, but never co-mentioned again, will be removed. Furthermore, we also removed resulting isolates (nodes with no edges). Such nodes are irrelevant for our network analysis.</p>
+<section id="network-summary-statistics">
+<h2>Network Summary Statistics<a class="headerlink" href="#network-summary-statistics" title="Link to this heading">#</a></h2>
+<p>A few summary statistics derived from the network graph:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Metric</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Number of nodes (<span class="math notranslate nohighlight">\(|N|\)</span>)</p></td>
+<td><p>2344</p></td>
+</tr>
+<tr class="row-odd"><td><p>Number of edges (<span class="math notranslate nohighlight">\(|E|\)</span>)</p></td>
+<td><p>8610</p></td>
+</tr>
+<tr class="row-even"><td><p>Average degree (<span class="math notranslate nohighlight">\(\langle k \rangle\)</span>)</p></td>
+<td><p>7.346</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>And for good measure, let’s get the 5 most connected nodes:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Degree</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Dronning Magrethe</p></td>
+<td><p>117</p></td>
+</tr>
+<tr class="row-odd"><td><p>Joachim</p></td>
+<td><p>114</p></td>
+</tr>
+<tr class="row-even"><td><p>Henrik</p></td>
+<td><p>100</p></td>
+</tr>
+<tr class="row-odd"><td><p>Frederik</p></td>
+<td><p>89</p></td>
+</tr>
+<tr class="row-even"><td><p>Christian</p></td>
+<td><p>88</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>All of whom are part of the Danish Royal Family (Kongehuset).</p>
+<blockquote>
+<div><p><strong>Example: Node and Degree</strong>
+Looking at the top 5 nodes (by degree) we see that node Magrethe has a degree of 117. This means that Magrethe is mentioned in relation to 117 other (unique) people, i.e. Magrethe is very famous and is frequently mentioned in articles, even if they don’t necessarily revolve around her.</p>
+</div></blockquote>
+</section>
+<section id="analysis-of-entertainment-network">
+<h2>Analysis of Entertainment Network<a class="headerlink" href="#analysis-of-entertainment-network" title="Link to this heading">#</a></h2>
+<p>Using <code class="docutils literal notranslate"><span class="pre">netwulf</span></code> we can visualize the network:</p>
+<p><img alt="initial graph" src="_images/initial-graph.png" /></p>
+<p>Note that the size of the nodes vary by the strength of connections, i.e. the bigger the node, the more co-mentions the associated person has.</p>
+<p>The network exhibits symptoms of the small world phenomenon, e.g., it’s possible to go from one node (person) to another through very few co-mentions.</p>
+<section id="power-law-and-top-hubs">
+<h3>Power-law and Top Hubs<a class="headerlink" href="#power-law-and-top-hubs" title="Link to this heading">#</a></h3>
+<p>It’s clear that some celebrities have a larger presence than others, which makes sense since these people may get more ‘clicks’. This is quantifiable through a measure called the power-law. Below is an illustration of the complementary cumulative distribution function (CCDF), which shows the probability that a node has degree <span class="math notranslate nohighlight">\(\geq x\)</span>:</p>
+<!--- We're interested in seeing if the network's degree distribution follows a power-law distribution using the `powerlaw` module. Below is an illustration of the complementary cumulative distribution function (CCDF), which shows the probability that a node has degree $\geq x$: -->
+<p><img alt="power-law" src="_images/power-law.png" /></p>
+<p>The network shows an interesting pattern: most people are only mentioned a few times, whereas a small number, usually high-profile celebrities, are mentioned more frequently. This creates a structure where a few key figures act as central “hubs” connecting to many others.</p>
+<p>A statistical comparison with an exponential model (<span class="math notranslate nohighlight">\(R=23.0994\)</span> and <span class="math notranslate nohighlight">\(p=0.0013\)</span>) confirms the power-law is a significantly better fit. In simple terms, it’s not by chance that e.g. Magrethe is mentioned across many different articles.</p>
+<p>This reflects the “rich-get-richer” effect, where high-profile individuals are repeatedly co-mentioned, which increases their presence in the network (the media). Because of this, looking at just a handful of these top mentioned celebrities can tell us a lot about trends and topics in entertainment news.</p>
+<p>Among the top 20 most connected nodes (hubs) in the network, 55% are male and 45% are female, which says that there is a fairly balanced gender representation at the top. Compared to the overall gender distribution (56.2% male and 42.3% female), it seems that females might be slightly more prominent among the top figures than their total numbers would suggest.</p>
+<p>This may hint that female figures, while fewer overall, are comparably central (or influential) in the entertainment media network. However, it is a bit inconclusive and we’d need more data to bring forth stronger conclusions from this.</p>
+<!-- This could mean that, although fewer women are mentioned overall, the ones who are mentioned tend to be just as central and possibly even more influential than their male counterparts. -->
+<!This displays a scale-free structure, i.e. many nodes have few connections, while a few (typically celebrities) act as high-degree hubs. A statistical comparison with an exponential model ($R=23.0994$ and $p=0.0013$) confirms the power-law is a significantly better fit.
+
+This reflects the "rich-get-richer" effect, where high-profile individuals are repeatedly co-mentioned, which increases their presence in the network. As a result, analyzing just a few top-connected individuals can reveal much of the media discourse and structure in the entertainment newspaper domain.
+
+Among the top 20 most connected nodes (hubs) in the network, 55% are male and 45% are female, which says that there is a fairly balanced gender representation at the top. Comparing this to the gender distribution graph in the previous section (56.2% male and 42.3% female), it may suggest that females are ever so slightly overrepresented among the top hubs relative to their overall presence. 
+
+This may hint that female figures, while fewer overall, are comparably central (or influential) in the entertainment media network. However, it is a bit inconclusive and we'd need more data to bring forth stronger conclusions from this.>
+</section>
+<section id="assortativity-random-network">
+<h3>Assortativity: Random Network<a class="headerlink" href="#assortativity-random-network" title="Link to this heading">#</a></h3>
+<!-- To understand whether the connections in our network reflect real social patterns or if they could just happen by chance, we looked at something called assortativity. This tells us whether people who are similarly connected (eg high degree) tend to be linked to each other. -->
+<p>To assess whether the observed network reflects real social patterns or if they are due to sheer chance, we looked at a network metric called degree assortativity. This is a measure of whether nodes with similar degrees tend to form connections.</p>
+<p>In our case, the network has a positive assortativity coefficient of 0.0808, which means that high-degree celebreties tend to connect to other high-degree celebrities.</p>
+<p>To actually see if this pattern was meaningful, we created 100 randomized versions of the network. These kept the same number of mentions per person but shuffled who was connected to who. In those random networks, the average assortativity was much lower (about <span class="math notranslate nohighlight">\(-0.0280\pm0.0080\)</span>), which is significantly lower than the real value:</p>
+<p><img alt="assort-dist" src="_images/assortativity-dist.png" /></p>
+<p>The difference was big enough that we can confidently say the real network is not random. Statistically, there is strong evidence (<span class="math notranslate nohighlight">\(p=0.005\)</span>) that popular figures tend to connect together, more than just by chance.</p>
+<p>Just a quick reality check. If we look at the Royal House, it would make sense that royals and their connections (all celebrities that are well connected, such as the Queen, King etc.) are probably co-mentioned as they are part of the same institution.</p>
+<!-- To assess whether the observed network reflects genuine social structure or could spawn by chance, we looked at its degree assortativity. This is a measure of whether nodes with similar degrees tend to connect. The real network has a positive assortativity coefficient of 0.0808, which means that high degree celebreties tend to connect to other high degree celebrities. 
+
+To actually check the meaningfulness of this pattern, we generated 100 randomized versions of the network using double-edge swaps, which preserves the degree distribution but randomize connections. The average assortativity across these random networks was $-0.0280\pm0.0080$, significantly lower than the real value:
+
+![assort-dist](figures/assortativity-dist.png)
+
+The z-score and p-value ($p < 0.05$) allow us to reject the null hypothesis that the observed assortativity is due to chance. Conclusively, the network shows a statistically significant tendency for high-degree nodes to connect (beyond what would be expected in a random graph). --->
+</section>
+</section>
+<section id="network-communities">
+<h2>Network Communities<a class="headerlink" href="#network-communities" title="Link to this heading">#</a></h2>
+<!To find meaningful clusters within the network, we applied a Louvain-based community detection algorithm with several custom filters to fine-tune results. The goal was to maximize modularity, which reflects the strength of division into communities/clusters. Higher values indicate clearer structure.>
+<p>Using Louvain-based community detection, we partitioned the network into clusters, or communities, that are well-connected. A community should ideally consist of individuals who share something significant such as topic or context - for instance, actors appearing in the movie Home Alone or broader, pop songwriters from 2010. By grouping individuals into such communities, we can begin to explain certain patterns or tendencies observed in the data.</p>
+<!-- For example, language use can vary greatly between communities. The language used in Home Alone is quite different in contrast to 2010 pop songwriters, so to meaningfully compare gendered language, it is essential to isolate language patterns together into the same context (communities). --->
+<section id="top-communities">
+<h3>Top Communities<a class="headerlink" href="#top-communities" title="Link to this heading">#</a></h3>
+<p>Each community is characterized by:</p>
+<ul class="simple">
+<li><p>Internal connection density</p></li>
+<li><p>Internal strength, i.e. total co-mention weight within the group</p></li>
+<li><p>Boundary edges, i.e. links to outside the community</p></li>
+</ul>
+<p>First, a table showing the overview:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Community</p></th>
+<th class="head"><p>Biggest node (seed)</p></th>
+<th class="head"><p>Community size</p></th>
+<th class="head"><p>Density</p></th>
+<th class="head"><p>Boundary Edges</p></th>
+<th class="head"><p>Modularity</p></th>
+<th class="head"><p>Theme</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>Joachim</p></td>
+<td><p>104</p></td>
+<td><p>1.27</p></td>
+<td><p>530</p></td>
+<td><p>0.117</p></td>
+<td><p>Danish Royal Family</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Harry</p></td>
+<td><p>41</p></td>
+<td><p>1.95</p></td>
+<td><p>182</p></td>
+<td><p>0.032</p></td>
+<td><p>British Royal Family</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>Geggo</p></td>
+<td><p>24</p></td>
+<td><p>2.45</p></td>
+<td><p>113</p></td>
+<td><p>0.014</p></td>
+<td><p>“Familien fra Bryggen”</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>Silas Holst</p></td>
+<td><p>104</p></td>
+<td><p>0.41</p></td>
+<td><p>337</p></td>
+<td><p>0.043</p></td>
+<td><p>“Vild med dans”</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>Nikolaj Lie Kaas</p></td>
+<td><p>119</p></td>
+<td><p>0.31</p></td>
+<td><p>379</p></td>
+<td><p>0.043</p></td>
+<td><p>Danish Actors</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>Christopher</p></td>
+<td><p>95</p></td>
+<td><p>0.39</p></td>
+<td><p>317</p></td>
+<td><p>0.034</p></td>
+<td><p>TV Personalities / Writers</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>Thomas Helmig</p></td>
+<td><p>12</p></td>
+<td><p>3.29</p></td>
+<td><p>17</p></td>
+<td><p>0.005</p></td>
+<td><p>“Klovn” / Music Family</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>Oliver Bjerrehuus</p></td>
+<td><p>81</p></td>
+<td><p>0.37</p></td>
+<td><p>280</p></td>
+<td><p>0.024</p></td>
+<td><p>Models / Reality Celebs</p></td>
+</tr>
+<tr class="row-even"><td><p>9</p></td>
+<td><p>Fie Laursen</p></td>
+<td><p>73</p></td>
+<td><p>0.40</p></td>
+<td><p>143</p></td>
+<td><p>0.022</p></td>
+<td><p>Social Media Influencers</p></td>
+</tr>
+<tr class="row-odd"><td><p>10</p></td>
+<td><p>Martin</p></td>
+<td><p>70</p></td>
+<td><p>0.34</p></td>
+<td><p>310</p></td>
+<td><p>0.017</p></td>
+<td><p>Mixed Public Figures</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>and a graph visualizing the communities:</p>
+<p><img alt="communities-graph" src="_images/colored-communities.png" /></p>
+<p>Communities are meaningful but they all suffer from alot of boundary connections, and interconnections with other communities, and as such are not perfect.</p>
+<p>The Danish Royal Family stands out with the highest modularity and internal strength. It’s quite easy for the algoritm to partition all Royal House members, while communities like “Familien fra Bryggen” are denser. This is probably due to the community being very closed, and their names are not mentioned outside the context of “Familien fra Bryggen”.</p>
+<p>Several groups clearly map to real-world categories (e.g. royalty, TV shows, influencers), which confirms that the algorithm captures socially relevant structures. In the <span class="xref myst">explainer notebook</span> we also show other people inside each community, which is how we derive the community theme in the table.</p>
+<p>These 10 communities differ from each other in several ways. For example, we might expect the language used in articles about the royal family to be more formal and respectful, whereas the language in reality TV coverage is likely to be more casual and filled with slang. To explore and measure these differences, our next chapter will analyze the language within these communities.</p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="data-processing.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Data Processing</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="analysis.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Language Analysis</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#network-summary-statistics">Network Summary Statistics</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analysis-of-entertainment-network">Analysis of Entertainment Network</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#power-law-and-top-hubs">Power-law and Top Hubs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#assortativity-random-network">Assortativity: Random Network</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#network-communities">Network Communities</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#top-communities">Top Communities</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

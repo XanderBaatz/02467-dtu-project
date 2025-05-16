@@ -1,0 +1,816 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Language Analysis &#8212; How the Media Talks About People</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'analysis';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Explainer-notebook.ipynb" href="explainer.html" />
+    <link rel="prev" title="Network Analysis" href="network.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo3.png" class="logo__image only-light" alt="How the Media Talks About People - Home"/>
+    <script>document.write(`<img src="_static/logo3.png" class="logo__image only-dark" alt="How the Media Talks About People - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Introduction
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="dataset.html">Dataset</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="data-processing.html">Data Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="network.html">Network Analysis</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Language Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="explainer.html">Explainer-notebook.ipynb</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fanalysis.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/analysis.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Language Analysis</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#community-analysis">Community analysis</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gendered-discourse">Gendered Discourse</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tf-unique-only">TF-Unique Only</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sentiment-score-comparison">Sentiment Score Comparison</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#offensive-language-distribution">Offensive Language Distribution</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#article-emotion-distribution">Article emotion distribution</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#random-sample-analysis">Random Sample Analysis</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hate-speech-significance-t-test">Hate-Speech Significance t-test</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sentiment-significance-t-test">Sentiment Significance t-test</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="language-analysis">
+<h1>Language Analysis<a class="headerlink" href="#language-analysis" title="Link to this heading">#</a></h1>
+<p>In this section, we perform two analysis methods to explore language patterns. One across the network, and the other globablly.</p>
+<p>First we perform community-level analysis, focusing on the top 10 communities identified in the previous section. Using TF-IDF, we extract the most distinctive terms for each group to uncover potential gendered language differences within each community.</p>
+<p>Secondly, we shift to a more global gender-based analysis across the entire dataset. Here, we examine a range of NLP-based features including sentiment, emotional tone, and the presence of offensive language. This includes statistical testing on random samples to determine whether any observed differences are truly significant.</p>
+<section id="community-analysis">
+<h2>Community analysis<a class="headerlink" href="#community-analysis" title="Link to this heading">#</a></h2>
+<section id="gendered-discourse">
+<h3>Gendered Discourse<a class="headerlink" href="#gendered-discourse" title="Link to this heading">#</a></h3>
+<p>The technical explanation can be found in the <span class="xref myst">explainer notebook</span>. Generally, we are using the following metrics to compare genders:</p>
+<ul class="simple">
+<li><p><strong>TF-IDF:</strong> Terms that best describe the community</p></li>
+<li><p><strong>TF:</strong> Terms that are frequently used in the community</p></li>
+<li><p><strong>TF-Unique:</strong> Terms that are frequently, but uniquely used in the community</p></li>
+</ul>
+<p>By applying these metrics separately to both genders, we can show which terms are most descriptive, most frequent, and most uniquely associated with each gender. It will take form like this:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Community</strong></p></th>
+<th class="head"><p><strong>MEN - TF-IDF</strong></p></th>
+<th class="head"><p><strong>MEN - TF</strong></p></th>
+<th class="head"><p><strong>MEN - Unique</strong></p></th>
+<th class="head"><p><strong>WOMEN - TF-IDF</strong></p></th>
+<th class="head"><p><strong>WOMEN - TF</strong></p></th>
+<th class="head"><p><strong>WOMEN - Unique</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>Best describing words of <code class="docutils literal notranslate"><span class="pre">MEN</span></code> in this community</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">...</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">...</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">....</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">...</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">...</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">...</span></code></p></td>
+<td><p>Frequent words used about <code class="docutils literal notranslate"><span class="pre">MEN</span></code> in this community</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">...</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">...</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">...</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">...</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>……</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>10</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">...</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">...</span></code></p></td>
+<td><p>..frequently-unique used words about <code class="docutils literal notranslate"><span class="pre">MEN</span></code> in this community</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">...</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">...</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">...</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>From the algorithm we have the following output which, for each metric, displays the top 15 most frequent word:</p>
+<p><img alt="pdf" src="_images/da-wordcloud.svg" /></p>
+<p>For the english version, please refer to the following box:</p>
+<div class="dropdown admonition note">
+<p class="admonition-title">Note</p>
+<p>It has been translated using Google Translate, and as such some meaning can be ‘lost in translation’.</p>
+<img alt="Word cloud" src="_images/en-wordcloud.svg" />
+</div>
+<p>There is alot to grasp from this wordcloud. But lets break it down community by community.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Community</p></th>
+<th class="head"><p>Biggest node (seed)</p></th>
+<th class="head"><p>Theme</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>Joachim</p></td>
+<td><p>Danish Royal Family</p></td>
+</tr>
+<tr class="row-odd"><td><p>The TF-IDF confirms this community is the Danish royal family. Words like “Prince”, “Princess”, “Queen”, etc. are frequently used. The language seems very title-oriented, which makes sense since titles are a big part of the royal institution. <strong>Overall, the language seems respectful and quite equal.</strong></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Harry</p></td>
+<td><p>British Royal Family</p></td>
+</tr>
+<tr class="row-even"><td><p>The TF-IDF again confirms this community is about the British royal house. The uniquely frequent words are mostly neutral, though the word “abuse” appears for women in the TF-unique list. <strong>Overall, the language usage seems equal.</strong></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>Geggo</p></td>
+<td><p>“Familien fra Bryggen”</p></td>
+</tr>
+<tr class="row-odd"><td><p>TF-IDF captures words like “Surgeon”, “Boxer”, and “Breast” as most descriptive. That fits, as the Kessler family (the ones in the show) are known for those things. The show revolves around a family, so terms like “Daughter”, “Mom”, etc., are also common. However, the uniquely frequent words differ a lot between genders. For men, words like “boxer” and “manager” appear often, but for women, words like “Pussy”, “Strip club”, and “Breastfeeding images” are uniquely used. <strong>There’s clearly some gendered language difference here.</strong></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>Silas Holst</p></td>
+<td><p>“Vild med dans”</p></td>
+</tr>
+<tr class="row-even"><td><p>Words like “Dancer”, “Host”, and “Partner” are common, which makes sense for a dance show. Most of the unique words are job titles, except for the word “sexy” which is used uniquely about a woman in this community. <strong>It’s hard to see an actual langauge difference here.</strong></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>Nikolaj Lie Kaas</p></td>
+<td><p>Danish Actors</p></td>
+</tr>
+<tr class="row-odd"><td><p>“Film actor”, “Instructor”, etc., are words that describe this community well. Most of the uniquely frequent words are pretty neutral, except for the term “sex bomb”, which has been used about a woman in this community. <strong>Overall, the language usage seems equal.</strong></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>Christopher</p></td>
+<td><p>TV Personalities / Writers</p></td>
+</tr>
+<tr class="row-even"><td><p>The TF-IDF for this community isn’t very specific. It’s hard to pin down the topic. Most words are job titles or about relationships. But the TF-unique for women includes words like “Sexy”, “Breast-flush”, “Naked show”, and “Fantasy”, while the TF-unique for men includes titles and terms like “Failure” and “Divorce drama”. <strong>So there’s a clear gender-language difference here.</strong></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>Thomas Helmig</p></td>
+<td><p>Music Family</p></td>
+</tr>
+<tr class="row-odd"><td><p>It’s also hard to confirm this community with TF-IDF alone. But words like “Death” are often used for men, while “Model” shows up a lot for women. The TF-unique terms for men are music-related like “Debut album”, while for women it’s stuff like “Top model” and “Nude picture”. <strong>But it’s hard to draw any conclusions here.</strong></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>Oliver Bjerrehuus</p></td>
+<td><p>Models / Reality Celebs</p></td>
+</tr>
+<tr class="row-even"><td><p>This community is also hard to identify as a closed group. Still, the TF-unique terms are telling. For men: “Sex”. For women: “Naughty”, “Oddset-babe”, “Vulgar”, “Nude model”, “Babe”, “Bikini-clad”, and “Riding girl”. <strong>It’s clear there’s a big gender-language difference.</strong></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>9</p></td>
+<td><p>Fie Laursen</p></td>
+<td><p>Social Media Influencers</p></td>
+</tr>
+<tr class="row-odd"><td><p>The TF-IDF makes it clear this is about reality TV and some influencers. “Hotel” shows up often, which could be from the show Paradise Hotel. But the TF-unique words differ: men get terms like “Sex program”, while women get “Triangle”, “Teasing”, “Breast bomb”, and “Sugardating advice”. <strong>That shows gendered language.</strong></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>10</p></td>
+<td><p>Martin</p></td>
+<td><p>Mixed Public Figures</p></td>
+</tr>
+<tr class="row-even"><td><p>This community is also hard to confirm. But TF-unique captures words like “Horny” for men, and “Sexkilling”, “Tx-sex”, and “Masturbation” for women. <strong>So there’s also some language difference in this community</strong></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<blockquote>
+<div><p>Men are more often described using titles or professional roles (like Boxer, Instructor, Debut album) in most of these communities.
+Women, on the other hand, are more often linked to sexualized or appearance-focused terms (like Bikini-clad, Sexy, Nude model) in several communities.
+Then there are communities where no big difference shows up. As expected, the language varies depending on what type of content the articles are about. It’s unlikely that articles about the royal family include slang or NSFW words, while reality shows are often made for younger adult audiences, where that kind of language is more common.</p>
+</div></blockquote>
+</section>
+<section id="tf-unique-only">
+<h3>TF-Unique Only<a class="headerlink" href="#tf-unique-only" title="Link to this heading">#</a></h3>
+<p>TF-Unique was the one to best capture some of the NSFW langauge differences between genders. These are outlined here:</p>
+<p><img alt="pdf" src="_images/en-wordcloud-unique.svg" /></p>
+</section>
+<section id="sentiment-score-comparison">
+<h3>Sentiment Score Comparison<a class="headerlink" href="#sentiment-score-comparison" title="Link to this heading">#</a></h3>
+<p>We also want to compare the sentiment between the articles between the two genders.</p>
+<p><img alt="pdf" src="_images/community-sentiment-analysis.svg" /></p>
+<p>Here it’s possible to see that men are typically in articles with a more negative sentiment. In some communties there’s quite a big discrepancy, such as community 10 and 4. Most of the articles in each community are mostly positive, expect for community 1 and 2. This could however be due to them having alot of neutral-sentiment articles and a few neutal/positive. Note that we have weighted the sentiment label (positive = 1, neutral = 0 and negative = -1) with the sentiment score. See <span class="xref myst">explainer notebook</span>. for more details.</p>
+<blockquote>
+<div><p>Note: Keep in mind that words like “Breast” don’t necessarily reflect negative sentiment by themselves, but using the word, for example, to describe a woman in a hostile way would create negative sentiment. This is just a limitation of NLP models.</p>
+</div></blockquote>
+</section>
+<section id="offensive-language-distribution">
+<h3>Offensive Language Distribution<a class="headerlink" href="#offensive-language-distribution" title="Link to this heading">#</a></h3>
+<p>We also want to compare the use of offensive language (based on a hate speech filter) in articles mentioning different genders.</p>
+<p><img alt="pdf" src="_images/hate-speech-gender.svg" /></p>
+<p>Here, we can see that women are more often associated with offensive language, which aligns with the TF-unique analysis. However, it’s hard to say if this is a significant difference, as there are also many cases where the levels appear quite similar.</p>
+</section>
+<section id="article-emotion-distribution">
+<h3>Article emotion distribution<a class="headerlink" href="#article-emotion-distribution" title="Link to this heading">#</a></h3>
+<p>We also want to show the emotion distribution between men and women.</p>
+<p><img alt="pdf" src="_images/emotion-analysis.svg" /></p>
+<p>However, it’s again hard to see any real patterns occuring inside the communties. The emotions seem to be quite equally distributed.</p>
+</section>
+</section>
+<section id="random-sample-analysis">
+<h2>Random Sample Analysis<a class="headerlink" href="#random-sample-analysis" title="Link to this heading">#</a></h2>
+<p>Is there an actual global difference between the two genders? It’s something we can see using statistical testing. First we do a TF-IDF wordcloud on all people in each gender:</p>
+<p><img alt="pdf" src="_images/random-sample-wordcloud.svg" /></p>
+<p>In the global TF-IDF analysis, we see expected gendered patterns in familial terms: men are commonly associated with words like “Prince” and “Son”, while women are linked to “Daughter”, “Princess”, and “Sister”. However, when we look at job titles, a noticeable difference emerges. Male-associated terms include high-status professions such as “CEO”, “Lawyer”, “Chief Editor”, and “Comedian”, while female-associated roles lean more toward “Host” and “Actor” with a single “Bank director”.</p>
+<p>The most frequently used terms (TF) largely reflect traditional family roles and do not reveal any unexpected gender differences words like “Daughter” and “Son” dominate both sets.</p>
+<p>The TF-Unique metric, on the other hand, provides clearer insight into subtle language biases. While both genders are described with job-related terms (e.g., “Bank Director” for women, “Farmer” for men), the women tf-unique also includes terms with sexual or appearance-based wordings such as “Topless”, “Beautiful”, and “Sexy”. This suggests a pattern where women are more often described in ways that emphasize physical appearance, a trend that is not as apparent in the mens tf-unique. However this wordcloud is biased since all text are out of context.</p>
+<section id="hate-speech-significance-t-test">
+<h3>Hate-Speech Significance t-test<a class="headerlink" href="#hate-speech-significance-t-test" title="Link to this heading">#</a></h3>
+<p>By randomly sampling 100 celebrities from each gender and comparing the avg hate-speech 300 times, we can check if there is a signifance difference.</p>
+<p>The result given is:</p>
+<p><img alt="pdf" src="_images/sentiment-dist-gender.svg" /></p>
+<p>To check if there’s actually a difference in how much offensive language is used about men and women, we ran a simple statistical test. We randomly picked 100 celebrities from each gender and did that 300 times then looked at how often offensive words showed up in the articles mentioning them. (With a greedy assumption that the articles sampled are about them, see explainer.ipynb)</p>
+<p>On average, articles about women contained offensive language 7.6% of the time, compared to 5.7% for men. That’s a difference of nearly 2%, which is supported with statistically significant <span class="math notranslate nohighlight">\((p \leq 0.05)\)</span> meaning it’s very unlikely to be due to chance.</p>
+<p>But it’s also worth pointing out the limitations here. The hate speech filter we used is based on NLP, and while it’s a very helpful too, it does not always understand context. For example, it might flag certain words even if they’re not meant offensively, or miss others that are clearly inappropriate depending on the situation</p>
+<p>For example take a look at this example</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[{</span><span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="s1">&#39;Victoria Beckham: Gode bryster&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;person&#39;</span><span class="p">:</span> <span class="s1">&#39;Victoria Beckham&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;descriptions&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;popstjerne&#39;</span><span class="p">,</span> <span class="s1">&#39;plastikpatter&#39;</span><span class="p">]}]</span>
+</pre></div>
+</div>
+<p>In english:
+Title: Victoria Beckham: Good breats
+Descriptions: [‘Popstar’, ‘Plasticboobs’]</p>
+</section>
+<section id="sentiment-significance-t-test">
+<h3>Sentiment Significance t-test<a class="headerlink" href="#sentiment-significance-t-test" title="Link to this heading">#</a></h3>
+<p>By randomly sampling 100 celebrities from each gender and comparing the sentiment 300 times (with replacement), we can use check if there is a signifance difference between the sentiment values of the articles.</p>
+<p><img alt="pdf" src="_images/sentiment-ment-dist.svg" /></p>
+<p>When looking at the general tone of the articles we found a minor difference between genders. On average, articles about men had a sentiment score of 0.527, while articles about women scored 0.594. That’s a difference of about 6.7%, with women being written about in a more positive tone overall.</p>
+<p>This difference is also statistically significant <span class="math notranslate nohighlight">\((p \leq 0.05)\)</span>, meaning it’s very unlikely to be random. So, we can say with confidence that articles about women tend to be more positive in tone compared to those about men.</p>
+<blockquote>
+<div><p><strong>Analysis conclusion:</strong> We found clear gender differences in language use. Some of these are expected like references to family roles such as “mom”, “dad”, or “princess”. However women were more often associated with sexualized or NSFW terms, even though articles about them generally had a more positive tone overall. Men, in contrast, tended to appear in articles with a slightly more negative sentiment Interestingly, while sentiment showed this difference, the distribution of emotions across genders (such as anger, joy, sadness) appeared fairly balanced thus suggesting that sentiment analysis may capture tone differences that emotion models do not.</p>
+</div></blockquote>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="network.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Network Analysis</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="explainer.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Explainer-notebook.ipynb</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#community-analysis">Community analysis</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gendered-discourse">Gendered Discourse</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tf-unique-only">TF-Unique Only</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sentiment-score-comparison">Sentiment Score Comparison</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#offensive-language-distribution">Offensive Language Distribution</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#article-emotion-distribution">Article emotion distribution</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#random-sample-analysis">Random Sample Analysis</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hate-speech-significance-t-test">Hate-Speech Significance t-test</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sentiment-significance-t-test">Sentiment Significance t-test</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

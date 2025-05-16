@@ -1,0 +1,3 @@
+# Conclusion
+
+There is indeed gender-specific langauge. Some is trivial such as "dad", "mom" and other titltes typicaly associated with gender. However our analysis also showed that women were more prone to NSFW words, but are spoken more positive about in terms of sentiment. Whereas men are typiccaly in articles with more negative sentiment. The distribution of emotions of articles seem to be equally distributed between the genders. 
