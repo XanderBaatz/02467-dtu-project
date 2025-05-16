@@ -1,0 +1,17 @@
+dataset/articles.parquet
+partAjupyter.ipynb
+partBpreprocessing.ipynb
+namePreprocessing.ipynb
+__pycache__
+ekstrabladet-dataset.ipynb
+danish-national-news.ipynb
+PartBWithNames.ipynb
+CommunityDetection.ipynb
+ebnerd_small
+ebnerd_large
+SocialProject
+dataset/articles_entertainment_nlp.parquet
+dataset/articles_entertainment_toyset.parquet
+dataset/filthered_names_df.pkl
+CommunityAnalysisPARTA.ipynb
+dataset/*
